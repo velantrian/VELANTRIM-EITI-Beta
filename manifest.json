@@ -1,0 +1,42 @@
+{
+  "id": "/",
+  "version": "10.1",
+  "version_name": "EITI Titan — AI Offline Edition",
+  "name": "VELANTRIM EITI",
+  "short_name": "EITI",
+  "description": "Персональная система знаний и AI-ассистент",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b0b0e",
+  "theme_color": "#2b1e16",
+  "orientation": "portrait-primary",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "lang": "ru"
+}
