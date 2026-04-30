@@ -11,9 +11,10 @@ function addCoopHeaders(response, request) {
     var h = new Headers(response.headers);
     h.set('Cross-Origin-Opener-Policy', 'same-origin');
     h.set('Cross-Origin-Embedder-Policy', 'credentialless');
-    return new Response(response.body, {
-        status: response.status,
-        statusText: response.statusText,
+    var cloned = response.clone();
+    return new Response(cloned.body, {
+        status: cloned.status,
+        statusText: cloned.statusText,
         headers: h
     });
 }

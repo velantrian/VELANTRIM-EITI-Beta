@@ -9344,7 +9344,7 @@ window.eitiClearAllModelCache = async function() {
                     }).catch(function(){});
                 }
                 if (!window._moscGraph || Object.keys(window._moscGraph).length === 0) {
-                    fetch('./mosc_graph_v3.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(data) {
+                    fetch('./mosc_graph_v2.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(data) {
                         if (!data || !data.graph) return;
                         window._moscGraph = data.graph;
                         console.info('[EITI] ✅ MOSC auto-loaded:', Object.keys(data.graph).length, 'узлов');
